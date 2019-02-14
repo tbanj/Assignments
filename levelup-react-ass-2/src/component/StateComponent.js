@@ -26,7 +26,7 @@ class StateComponent extends Component {
         return(
             <div>
                 <button onClick = {this.buttonClick}>
-                    Click The Button
+                    Click This Button
                 </button>
                 <p>You Clicked this button {thestate.clickcount} Times.</p>
 
