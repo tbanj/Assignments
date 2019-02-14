@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import assignment2 from './assignment2';
+import Assignment2 from './assignment2';
 
 ReactDOM.render(
     <div>
-        <assignment2/>
+        <Assignment2/>
     </div>, document.getElementById('root')
 );
 
