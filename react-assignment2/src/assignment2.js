@@ -12,7 +12,7 @@ class assignment2 extends React.Component{
     }
 
     handleClick = (event) => {
-        this.setState({count: this.state.count = 0});
+        this.setState({count: 0});
     }
 
     onTypeAction = (event) => {
@@ -21,7 +21,7 @@ class assignment2 extends React.Component{
     }
 
     textClear = (event) => {
-        this.setState({textLogs: this.state.textLogs = ""});
+        this.setState({textLogs: ""});
     }
 
     render(){
@@ -39,6 +39,7 @@ class assignment2 extends React.Component{
                     name= "space" 
                     placeholder="Type Here"
                     onChange={this.onTypeAction}
+                    value={this.state.textLogs}
                 />
                 <button onClick = {this.textClear}>Clear Text</button>
                 <p>{this.state.textLogs}</p>
