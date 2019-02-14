@@ -4,7 +4,7 @@ class assignment2 extends React.Component{
 
     state = {
         count: 0,
-        logs: "",
+        textLogs: "",
     }
     
     clickAction1 = (event) => {
@@ -17,11 +17,11 @@ class assignment2 extends React.Component{
 
     onTypeAction = (event) => {
         //onst outputs = event.target.value;
-        this.setState({logs: event.target.value});
+        this.setState({textLogs: event.target.value});
     }
 
     textClear = (event) => {
-        this.setState({logs: this.state.count = ""});
+        this.setState({textLogs: this.state.textLogs = ""});
     }
 
     render(){
@@ -41,7 +41,7 @@ class assignment2 extends React.Component{
                     onChange={this.onTypeAction}
                 />
                 <button onClick = {this.textClear}>Clear Text</button>
-                <p>{this.state.logs}</p>
+                <p>{this.state.textLogs}</p>
 
             </div>
         )
