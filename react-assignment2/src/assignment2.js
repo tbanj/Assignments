@@ -1,6 +1,6 @@
 import React from "react";
 
-class Assignment2 extends React.Component{
+class assignment2 extends React.Component{
 
     state = {
         count: 0,
@@ -47,4 +47,4 @@ class Assignment2 extends React.Component{
         )
     }
 }
-export default Assignment2;
+export default assignment2;
