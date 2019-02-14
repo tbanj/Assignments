@@ -1,2 +1,4 @@
 # Assignments
-This repository contains students assignments and solutions
+This repository contains students assignments and 
+nice!!!
+

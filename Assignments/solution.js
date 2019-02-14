@@ -38,4 +38,4 @@ class Solution extends React.Component{
     }
 }
 
-export default Solution;
+export default Solution
