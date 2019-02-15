@@ -1,21 +1,44 @@
-body {
-  background-color: gray;
-}
-.App {
-  text-align: center;
-  background-color: yellowgreen;
-  padding: 20px;
-  margin-left: 30%;
-  margin-right: 30%;
-  margin-top: 20px;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-input.custom {
-  padding: 5px;
-  color: red;
-  font: 16px "Helvetica", "Arial", "sans-serif"
+body {
+  background-color: gainsboro;
+}
+.Container {
+  text-align: center;
+  background-color: yellowgreen;
+  margin: auto;
+  margin-top: 6%;
+  width: 30%;
+  color: gainsboro;
+  padding-bottom: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.Header {
+  padding-bottom: 20%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 150%;
+}
+
+.Container label {
+  font-size: 150%;
+}
+
+.Container input {
+  padding: 5%;
+  margin-bottom: 10%;
+  text-align: center;
+  font-size: 2em;
 }
 
 .AppButton {
-  padding: 10px;
+  padding: 2%;
+  margin: 2%;
+  background-color: brown;
+  color: gainsboro;
+  font-size: 2em;
 }

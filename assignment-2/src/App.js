@@ -9,7 +9,6 @@
 
 
 import React, { Component } from 'react';
-
 import './App.css';
 
 class App extends Component {
@@ -37,23 +36,30 @@ class App extends Component {
       }
 
   render() {
-    return ( <div class = "App">
-                <h1>LevelUp Lottery</h1>
-                <label>Enter Lucky Number</label>
-                <br></br>
-                <input class = "custom" type = "number"
-                  name = "task"
-                  placeholder = "Number"
-                  onChange = {this.handleChange}>
-                </input>
-                <p>{this.state.task}</p>
+    return ( <div class = "Container">
 
-                <button class = "AppButton" onClick = {this.handleClick}>SUBMIT</button>
-                <h4>You Can Submit Multiple Entries</h4>
-                <p>Number Of Submition = {this.state.count}</p>
-    
+                <div class = "Header">
+                  <h1>LevelUp Lottery</h1>
+                </div>  
+                <div>
+                  
+                  <label>Enter Lucky Number</label>
+                  <br/>
+                  <input class = "Custom" type = "number"
+                    name = "task"
+                    placeholder = "NUMBER"
+                    onChange = {this.handleChange}>
+                  </input>
+                  <br/>
+                  <h4>N.B: Must Be A Number</h4>
+                  <p>{this.state.task}</p>
+                  
+                  <button class = "AppButton" onClick = {this.handleClick}>SUBMIT</button>
+                  <h4>You Can Submit Multiple Entries</h4>
+                  <p>Number Of Submission = {this.state.count}</p>
+                </div>
               </div>
-            );
+    );
   }
 }
 
