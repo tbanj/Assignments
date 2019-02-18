@@ -10,6 +10,8 @@
 
 import React, { Component } from 'react';
 import './App.css';
+import { Button } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
 class App extends Component {
 
@@ -36,29 +38,42 @@ class App extends Component {
       }
 
   render() {
-    return ( <div class = "Container">
+    return (
+      <div>
 
+        <Container>
+          <Row>
+            <Col>
+              <div class = "Container">
                 <div class = "Header">
                   <h1>LevelUp Lottery</h1>
-                </div>  
+                </div> 
+
                 <div>
-                  
                   <label>Enter Lucky Number</label>
                   <br/>
-                  <input class = "Custom" type = "number"
-                    name = "task"
-                    placeholder = "NUMBER"
-                    onChange = {this.handleChange}>
-                  </input>
+                  <Col>
+                    <input class = "Custom" type = "number"
+                      name = "task"
+                      placeholder = "NUMBER"
+                      onChange = {this.handleChange}>
+                    </input>
+                  </Col>
                   <br/>
                   <h4>N.B: Must Be A Number</h4>
                   <p>{this.state.task}</p>
-                  
-                  <button class = "AppButton" onClick = {this.handleClick}>SUBMIT</button>
+                  <Button variant="secondary" size="lg" onClick = {this.handleClick}>
+                    SUBMIT
+                  </Button>
                   <h4>You Can Submit Multiple Entries</h4>
                   <p>Number Of Submission = {this.state.count}</p>
                 </div>
               </div>
+                        
+            </Col>
+          </Row>
+        </Container>
+      </div>          
     );
   }
 }
