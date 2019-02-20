@@ -1,0 +1,29 @@
+@import "./../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+
+.changeColor {
+    background-color: red;
+    color: aquamarine;
+}
+
+.textize {
+    width: 500px;
+    height: 500px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+.formSignup {
+    margin: auto;
+    width: 400px;
+    padding: 10px;
+  }
+
+  .formParent {
+    text-align: center;
+  }
+  .forCenter {
+    display: inline-block;
+  }
+
