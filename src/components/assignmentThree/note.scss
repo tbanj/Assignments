@@ -21,9 +21,11 @@
   }
 
   .formParent {
+    //  use to prepare form components which is child of formParent to be able to center the div which contains it
     text-align: center;
   }
   .forCenter {
+    //   is use to center the div
     display: inline-block;
   }
 
