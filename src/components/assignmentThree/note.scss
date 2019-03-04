@@ -1,3 +1,4 @@
+
 @import "./../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 
@@ -29,3 +30,19 @@
     display: inline-block;
   }
 
+
+
+  .formSignup {
+    margin: auto;
+    width: 400px;
+    padding: 10px;
+  }
+
+  #buttonSubmit {
+   
+    display: inline-block;
+  }
+
+  #buttonDiv {
+    text-align: center;
+  }

@@ -9,7 +9,7 @@ export const nameSingl = function nameCheck() {
       .then(function (response) {
         // handle success
         console.log(response.data['name']);
-        var nameSingle = response.data['name']
+        // var nameSingle = response.data['name'];
         
         
        
@@ -38,6 +38,26 @@ export const STORE_DATA = '[Data] store  user input\'s data';
 export const DELETE_DATA = '[DATA] delete  user input';
 let id = 0;
 
+export const STORE_STUDENTS = '[STUDENTS] store  bio data\'s students';
+
+
+export const STUDENT_ACTION = {
+    type : STORE_STUDENTS,
+    payload: {
+        id: id++,
+        firstName: '',
+        lastName: '',
+        email: '',
+        zipcode: 0,
+        phoneNumber: 0,
+        date: 0,
+        gender: 'Male',
+        maritalStatus: '',
+        jobTitle: '',
+    }
+}
+
+
 export const DATA_ACTION = {
     type : STORE_DATA,
     payload: {
@@ -61,6 +81,29 @@ const initialState = {
 function reducer(state = initialState, action) {
 
     switch (action.type) {
+
+        case STORE_STUDENTS:
+                // console.log(action.payload);
+                console.log(action.payload.id);
+                console.log(action.payload.jobTitle);
+                
+                // return {
+                //     tweet: action.payload
+                // }
+
+                return Object.assign(state, 
+                    {}
+                    , {
+                        // single data which is an object
+                        // tweet: action.payload
+
+                        // for array data
+                        // concat below is use to add payload from
+                        // another action type to this action type
+                        datas: state.datas.concat(action.payload),
+                    });
+
+
         case STORE_DATA:
                 // console.log(action.payload);
                 console.log(action.payload.id);
@@ -80,7 +123,7 @@ function reducer(state = initialState, action) {
                         // concat below is use to add payload from
                         // another action type to this action type
                         datas: state.datas.concat(action.payload),
-                    })
+                    });
                 
         
         
