@@ -1,3 +1,4 @@
+
 @import "./../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 
@@ -8,7 +9,7 @@
 
 .textize {
     width: 500px;
-    height: 500px;
+    height: 100px;
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -21,9 +22,27 @@
   }
 
   .formParent {
+    //  use to prepare form components which is child of formParent to be able to center the div which contains it
     text-align: center;
   }
   .forCenter {
+    //   is use to center the div
     display: inline-block;
   }
 
+
+
+  .formSignup {
+    margin: auto;
+    width: 400px;
+    padding: 10px;
+  }
+
+  #buttonSubmit {
+   
+    display: inline-block;
+  }
+
+  #buttonDiv {
+    text-align: center;
+  }
